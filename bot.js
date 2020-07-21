@@ -13,10 +13,14 @@ client.on('ready', () => {
 
 
 client.on('message', message => {
+  let status = "i do not know"
+  if (message.content === 'status') {
+    fetch('https://minecraft.scotty.dance/minecraft/state')
+      .then(response => response.json())
+      .then(data => console.log(data)
+      .then(status = data.state);
 
-  if (message.content === 'ping') {
-
-    message.reply('pong');
+    message.reply(status);
 
   }
 
