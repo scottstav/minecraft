@@ -1,8 +1,8 @@
 {
 
-  "name": "MC Bot",
+  "name": "mc-bot",
 
-  "description": "...",
+  "description": "yes?",
 
   "version": "0.0.0",
 
@@ -16,7 +16,7 @@
 
   "dependencies": {
 
-    "discord.js": "12.2.0",
+    "discord.js": "11.1.0",
 
     "request": "2.81.0"
 
